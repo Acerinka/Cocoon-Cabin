@@ -1,0 +1,14 @@
+* text=auto
+*.cs text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.svg text eol=lf
+*.unity text eol=lf
+*.meta text eol=lf
+Assets/**/*.obj filter=lfs diff=lfs merge=lfs -text
+Assets/**/*.fbx filter=lfs diff=lfs merge=lfs -text
+Assets/**/*.png filter=lfs diff=lfs merge=lfs -text
+Assets/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+Assets/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+Assets/CocoonPrototype/Materials/ReferencePBR/GeneratedTextures/*.asset filter=lfs diff=lfs merge=lfs -text

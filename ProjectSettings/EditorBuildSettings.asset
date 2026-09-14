@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Cocoon_OnboardingVR.unity
+    guid: 9ba748571043c9346bee60ca9d5a7d09
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9ce163636d3216e4c9e60059b2fb4f0e, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 0983b493fb32d91488cf4f086da96173, type: 2}
