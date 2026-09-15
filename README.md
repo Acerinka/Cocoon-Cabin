@@ -2,22 +2,23 @@
   <img src="docs/portfolio/pages/01-cover.jpg" alt="Cocoon Cabin: gesture interaction and cabin design for first-time passengers" width="100%">
 </p>
 
+<p>
+  <a href="https://youtu.be/s00BhWtERXI"><strong>Watch the English film ↗</strong></a> &nbsp;·&nbsp;
+  <a href="https://youtu.be/bH3W_9BMuKw">中文视频 ↗</a> &nbsp;·&nbsp;
+  <a href="docs/portfolio/Cocoon-Cabin-Portfolio-EN.pdf">English portfolio PDF</a> &nbsp;·&nbsp;
+  <a href="docs/portfolio/README.md">Nine-page case study</a> &nbsp;·&nbsp;
+  <a href="docs/portfolio/Cocoon-Cabin-Figma-EN.zip">Editable SVGs</a>
+</p>
+
 # Cocoon Cabin
 
-**How do you complete a ride when there is no driver to guide you?**
+**Interaction design for driverless taxis.**
 
 Cocoon Cabin explores the first encounter with a robotaxi: being recognised, confirming a request, entering with luggage, understanding the cabin and leaving at the destination. The project connects gesture interaction, physical space and screen feedback in an experience that can be explored in VR.
 
 Developed for **Advanced Human-Machine Interfaces at Politecnico di Milano**, 2026.
 
 **Yuchen Zhang's contribution:** all Unity development, the interaction concept, selected UI work and user research. Research, cabin design, interface design and the web gesture prototype are team outcomes.
-
-<p>
-  <a href="https://youtu.be/s00BhWtERXI"><strong>Watch the English film ↗</strong></a> &nbsp;·&nbsp;
-  <a href="https://youtu.be/bH3W_9BMuKw">中文视频 ↗</a> &nbsp;·&nbsp;
-  <a href="docs/portfolio/Cocoon-Cabin-Portfolio-EN.pdf">English portfolio PDF</a> &nbsp;·&nbsp;
-  <a href="docs/portfolio/README.md">Nine-page case study</a>
-</p>
 
 `Unity 2022.3.53f1` · `C#` · `OpenXR` · `XR Interaction Toolkit` · `Meta Quest`
 
@@ -42,12 +43,12 @@ The prototype focuses on a **first-time passenger carrying luggage**. Each trans
 
 ## Why these interactions?
 
-Exploratory interviews and three qualitative journey maps examined getting home late, arriving with luggage and booking a ride for a family member. The team prioritised opportunities in seven categories using gold, silver and bronze votes, weighted **3 / 2 / 1**.
+Exploratory interviews and three qualitative journey maps examined getting home late, arriving with luggage and booking a ride for someone else. The team prioritised opportunities in seven categories using gold, silver and bronze votes, weighted **3 / 2 / 1**.
 
 This led to three design priorities:
 
 - **Explicit confirmation:** distinguish being detected from committing to a ride, and show the result.
-- **Connected transitions:** coordinate the card, door, ramp, seat and luggage instead of leaving the rider to infer their order.
+- **Sequenced automation:** coordinate the card, ramp, door, seat and luggage through clear prerequisites.
 - **Visible progress:** explain the current journey stage and arrival through shared and personal displays.
 
 The journey curves are qualitative summaries. The voting weights are prioritisation rules, not participant counts or measured usability scores. [Read the research page →](docs/portfolio/pages/02-research.jpg)
@@ -127,9 +128,9 @@ Use a Git clone with LFS for the Unity project. GitHub's source ZIP may contain 
 
 ## Portfolio files
 
-The English case study has **nine pages** and follows the same visual direction as the Chinese portfolio.
+The **nine-page English case study** reflects the revised Chinese portfolio: design research, the complete journey, gesture confirmation, boarding, in-cabin interfaces, exit, prototyping workflow and Unity outcomes.
 
-- [English PDF](docs/portfolio/Cocoon-Cabin-Portfolio-EN.pdf) — searchable text and embedded imagery.
+- [English PDF](docs/portfolio/Cocoon-Cabin-Portfolio-EN.pdf) — searchable text, embedded imagery and clickable GitHub / English-film / Chinese-film links on the cover.
 - [Read all nine pages](docs/portfolio/README.md) — rendered pages for browsing on GitHub.
 - [Figma SVG package](docs/portfolio/Cocoon-Cabin-Figma-EN.zip) — nine **2560 × 1440 SVGs**, each containing a **3840 × 2160 PNG** background with editable text above it. Uses Inter Regular and SemiBold.
 

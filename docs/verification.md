@@ -8,8 +8,10 @@ Checked on **15 September 2026** against the independent Cocoon Cabin publicatio
 | Authored scene load | Passed | 10,071 scene objects, one taxi state machine and no missing scripts. |
 | Required model files | Passed | Model geometry is present rather than unresolved LFS pointers. |
 | Repository structure and local documentation links | Passed | `Tools/verify_repository.py`. |
-| English portfolio | Passed | Nine pages rendered and visually reviewed; searchable PDF text. |
-| Figma package | Passed | Nine 2560 × 1440 SVGs; one embedded 3840 × 2160 PNG per page; 245 native editable text objects. ZIP matches the SVG source files. |
+| English portfolio | Passed | Nine pages translated from the revised Chinese case study, rendered and visually reviewed; searchable PDF text. Three cover links and two final-page source links verified. |
+| Figma package | Passed | Nine 2560 × 1440 SVGs; one embedded 3840 × 2160 PNG per page; 243 native editable text objects. ZIP matches the SVG source files. |
+
+The latest update changes portfolio and documentation files only. The Unity checks above were completed for the initial publication; they were not rerun for the portfolio revision.
 
 The editor check used the team's existing local Japanese City package. That package is excluded from the public source and must be restored under its own license. This check does not establish compatibility with a different version of that dependency.
 

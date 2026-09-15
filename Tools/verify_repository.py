@@ -66,13 +66,19 @@ def main():
             require(not re.search(r'[\u4e00-\u9fff]', ''.join(node.itertext())), 'Untranslated authored text')
         text_nodes += len(texts)
         require((portfolio / 'pages' / path.name.replace('.svg', '.jpg')).is_file(), 'Missing page preview')
-    require(text_nodes == 245, 'Unexpected editable text count')
+    require(text_nodes == 243, 'Unexpected editable text count')
+    cover = ET.parse(portfolio / 'svg/01-cover.svg').getroot()
+    cover_links = {node.get('href') or node.get('{http://www.w3.org/1999/xlink}href')
+                   for node in cover.findall('.//s:a', ns)}
+    require(cover_links == {'https://github.com/Acerinka/Cocoon-Cabin',
+                            'https://youtu.be/s00BhWtERXI',
+                            'https://youtu.be/bH3W_9BMuKw'}, 'Missing or incorrect cover links')
     with zipfile.ZipFile(portfolio / 'Cocoon-Cabin-Figma-EN.zip') as archive:
         require(archive.testzip() is None, 'Corrupt Figma ZIP')
         for path in pages:
             require(archive.read('SVG_2K/' + path.name) == path.read_bytes(), 'Figma ZIP differs from SVG source')
     require((portfolio / 'Cocoon-Cabin-Portfolio-EN.pdf').read_bytes().startswith(b'%PDF-'), 'Missing or invalid PDF')
-    print('PASS:', len(files), 'tracked files;', links, 'local documentation links; 9 SVG pages; 245 editable text objects; embedded 4K backgrounds; matching Figma ZIP.')
+    print('PASS:', len(files), 'tracked files;', links, 'local documentation links; 9 SVG pages; 243 editable text objects; 3 cover links; embedded 4K backgrounds; matching Figma ZIP.')
 
 if __name__ == '__main__':
     main()
